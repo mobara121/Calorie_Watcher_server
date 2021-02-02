@@ -18,6 +18,6 @@ app.use(require('./middleware/validate-session'));
 app.use('/calorie', calorie);
 app.use('/food', food);
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log('App is listening on 3000')
 })
